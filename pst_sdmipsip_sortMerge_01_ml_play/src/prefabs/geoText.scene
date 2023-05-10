@@ -1,0 +1,209 @@
+{
+    "id": "3da0daa8-f13c-434d-afa8-403c9c0ce2ac",
+    "sceneType": "PREFAB",
+    "settings": {
+        "generateAwakeHandler": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 0,
+        "borderHeight": 0
+    },
+    "displayList": [
+        {
+            "type": "Text",
+            "id": "5d6acb24-e09b-4958-b814-b4a8bdf42fd0",
+            "label": "text",
+            "components": [],
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "New text",
+            "align": "center",
+            "fontFamily": "Baloo Bhaijaan, \"Comic Sans MS\", \"Chalkboard SE\", Sans-serif",
+            "fontSize": "64px",
+            "fontStyle": "bold",
+            "stroke": "#000",
+            "strokeThickness": 6,
+            "backgroundColor": "#00000000"
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "prefabProperties": [
+        {
+            "name": "enText",
+            "label": "English Text",
+            "tooltip": "English Text",
+            "defValue": "",
+            "customDefinition": false,
+            "type": {
+                "id": "string"
+            }
+        },
+        {
+            "name": "enSize",
+            "label": "English Font Size",
+            "tooltip": "Overrides font size for English text if set",
+            "defValue": 0,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "cnsText",
+            "label": "Chinese Simplified Text",
+            "tooltip": "Chinese Simplified Text",
+            "defValue": "",
+            "customDefinition": false,
+            "type": {
+                "id": "string"
+            }
+        },
+        {
+            "name": "cnsSize",
+            "label": "Chinese Simplified Font Size ",
+            "tooltip": "Overrides font size for cns text if set",
+            "defValue": 0,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "cntText",
+            "label": "Chinese Traditional Text",
+            "tooltip": "Chinese Traditional Text",
+            "defValue": "",
+            "customDefinition": false,
+            "type": {
+                "id": "string"
+            }
+        },
+        {
+            "name": "cntSize",
+            "label": "Chinese Traditional Font Size",
+            "tooltip": "Overrides font size for cnt text if set",
+            "defValue": 0,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "jaText",
+            "label": "Japanese Text",
+            "tooltip": "Japanese Text",
+            "defValue": "",
+            "customDefinition": false,
+            "type": {
+                "id": "string"
+            }
+        },
+        {
+            "name": "jaSize",
+            "label": "Japanese Font Size",
+            "tooltip": "Overrides font size for Japanese text if set",
+            "defValue": 0,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "koText",
+            "label": "Korean Text",
+            "tooltip": "Korean Text",
+            "defValue": "",
+            "customDefinition": false,
+            "type": {
+                "id": "string"
+            }
+        },
+        {
+            "name": "koSize",
+            "label": "Korean Font Size",
+            "tooltip": "Overrides font size for Japanese text if set",
+            "defValue": 0,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "frText",
+            "label": "French Text",
+            "tooltip": "French Text",
+            "defValue": "",
+            "customDefinition": false,
+            "type": {
+                "id": "string"
+            }
+        },
+        {
+            "name": "frSize",
+            "label": "French Font Size",
+            "tooltip": "Overrides font size for French text if set",
+            "defValue": 0,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "deText",
+            "label": "German Text",
+            "tooltip": "German Text",
+            "defValue": "",
+            "customDefinition": false,
+            "type": {
+                "id": "string"
+            }
+        },
+        {
+            "name": "deSize",
+            "label": "German Font Size",
+            "tooltip": "Overrides font size for French text if set",
+            "defValue": 0,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "ptText",
+            "label": "Portuguese Text",
+            "tooltip": "Portuguese Text",
+            "defValue": "",
+            "customDefinition": false,
+            "type": {
+                "id": "string"
+            }
+        },
+        {
+            "name": "ptSize",
+            "label": "Portuguese Font Size",
+            "tooltip": "Overrides font size for Portuguese text if set",
+            "defValue": 0,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "jsonData",
+            "label": "Geo JSON",
+            "tooltip": "Enter JSON from smodin multi translate ",
+            "defValue": "[]",
+            "customDefinition": false,
+            "type": {
+                "id": "string"
+            }
+        }
+    ]
+}

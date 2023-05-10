@@ -1,0 +1,404 @@
+{
+    "components": [
+        {
+            "name": "ClickHandler",
+            "baseClass": "UserComponent",
+            "gameObjectType": "Phaser.GameObjects.Image",
+            "properties": [
+                {
+                    "name": "eventKey",
+                    "label": "Event To Emit",
+                    "tooltip": "setting this key will cause the button to emit an event from sdevents on click",
+                    "defValue": "",
+                    "customDefinition": false,
+                    "type": {
+                        "id": "string"
+                    }
+                },
+                {
+                    "name": "eventArguments",
+                    "label": "Event Arguments",
+                    "tooltip": "Array of arguments passed into event call",
+                    "defValue": "[]",
+                    "customDefinition": false,
+                    "type": {
+                        "id": "expression",
+                        "expressionType": "Array"
+                    }
+                },
+                {
+                    "name": "tweenOnPress",
+                    "label": "Tween On Click",
+                    "tooltip": "If true, object will do a slight scale tween on click, like a button",
+                    "defValue": true,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "boolean"
+                    }
+                },
+                {
+                    "name": "soundKey",
+                    "label": "Sound",
+                    "tooltip": "If set, plays sound on click",
+                    "defValue": "",
+                    "customDefinition": false,
+                    "type": {
+                        "id": "audio-key"
+                    }
+                },
+                {
+                    "name": "debug",
+                    "label": "Debug",
+                    "tooltip": "if true, will log the game object that was clicked",
+                    "defValue": false,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "boolean"
+                    }
+                },
+                {
+                    "name": "disableInputOnEnd",
+                    "label": "Disable Input On End",
+                    "tooltip": "If true, disables input on end event",
+                    "defValue": true,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "boolean"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "AutoAnimate",
+            "baseClass": "UserComponent",
+            "gameObjectType": "Phaser.GameObjects.Sprite",
+            "properties": [
+                {
+                    "name": "startAnim",
+                    "label": "Starting Animation",
+                    "tooltip": "Plays this animation on scene start ",
+                    "defValue": "",
+                    "customDefinition": false,
+                    "type": {
+                        "id": "animation-key"
+                    }
+                },
+                {
+                    "name": "frameRate",
+                    "label": "Frame Rate ",
+                    "tooltip": "",
+                    "defValue": 24,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "number"
+                    }
+                },
+                {
+                    "name": "delay",
+                    "label": "Delay",
+                    "tooltip": "Property 1",
+                    "defValue": 0,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "number"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "SimpleDuckAnchor",
+            "baseClass": "UserComponent",
+            "gameObjectType": "Phaser.GameObjects.Image",
+            "properties": [
+                {
+                    "name": "anchorVertical",
+                    "label": "Vertical Anchor",
+                    "tooltip": "Vertical Y part of the screen to anchor the object to. None will not overwrite this specific Y value so Y can be modified elsewhere and only X anchor will be applied",
+                    "defValue": "None",
+                    "customDefinition": false,
+                    "type": {
+                        "id": "option",
+                        "options": [
+                            "Top",
+                            "Middle",
+                            "Bottom",
+                            "None"
+                        ]
+                    }
+                },
+                {
+                    "name": "anchorHorizontal",
+                    "label": "Horizontal Anchor",
+                    "tooltip": "Horizontal X side of the screen to anchor the object to. None will not overwrite this specific X value so x can be modified elsewhere and only Y anchor will be applied",
+                    "defValue": "None",
+                    "customDefinition": false,
+                    "type": {
+                        "id": "option",
+                        "options": [
+                            "Left",
+                            "Center",
+                            "Right",
+                            "None"
+                        ]
+                    }
+                },
+                {
+                    "name": "useObjectBounds",
+                    "label": "Use Object Bounds",
+                    "tooltip": "Grabs the bounds of the object / objects in group and uses the average position as the anchor",
+                    "defValue": true,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "boolean"
+                    }
+                },
+                {
+                    "name": "offsetXLandscape",
+                    "label": "X Offset Landscape",
+                    "tooltip": "Adds a manual offset from the anchored position on the x axis for Landscape Mode",
+                    "defValue": 0,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "number"
+                    }
+                },
+                {
+                    "name": "offsetXPortrait",
+                    "label": "X Offset Portrait",
+                    "tooltip": "Adds a manual offset from the anchored position on the x axis for Portrait Mode",
+                    "defValue": 0,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "number"
+                    }
+                },
+                {
+                    "name": "offsetYLandscape",
+                    "label": "Y Offset Landscape",
+                    "tooltip": "Adds a manual offset from the anchored position on the y axis for Landscape Mode",
+                    "defValue": 0,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "number"
+                    }
+                },
+                {
+                    "name": "offsetYPortrait",
+                    "label": "Y Offset Portrait",
+                    "tooltip": "Adds a manual offset from the anchored position on the y axis for portrait mode",
+                    "defValue": 0,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "number"
+                    }
+                },
+                {
+                    "name": "dynamicScale",
+                    "label": "Dynamic Scale",
+                    "tooltip": "Scale is modified by screen size ",
+                    "defValue": "No Scaling",
+                    "customDefinition": false,
+                    "type": {
+                        "id": "option",
+                        "options": [
+                            "No Scaling",
+                            "Dynamic Scale"
+                        ]
+                    }
+                },
+                {
+                    "name": "scaleLandscapeUseSceneScale",
+                    "label": "Landscape Scale : Scene Scale Lower Bound",
+                    "tooltip": "Use the scale value of the object at start as the base for scaling",
+                    "defValue": true,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "boolean"
+                    }
+                },
+                {
+                    "name": "scaleLandscapeBase",
+                    "label": "Landscape Scale : Custom Lower Bound",
+                    "tooltip": "Alternate for above boolean scene scale. The base scale for landscape scaling. When the screen is shrunk in with the height being 640 this will be the scale. The scale will proportionally increase based on this value. ",
+                    "defValue": 0,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "number"
+                    }
+                },
+                {
+                    "name": "scaleLandscapeUseMax",
+                    "label": "Landscape Scale : Use Max Scale",
+                    "tooltip": "Whether or not to use the max scale value",
+                    "defValue": false,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "boolean"
+                    }
+                },
+                {
+                    "name": "scaleLandscapeMax",
+                    "label": "Landscape Scale : Max Scale Value",
+                    "tooltip": "Cutoff for how big the scale can get. Currently increases at the same rate and will stop scaling early once it reaches the max scale instead of stretching the whole range over the whole screen ratio",
+                    "defValue": 0,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "number"
+                    }
+                },
+                {
+                    "name": "scalePortraitUseSceneScale",
+                    "label": "Portrait Scale : Scene Scale Lower Bound",
+                    "tooltip": "Use the scale value of the object at start as the base for scaling",
+                    "defValue": true,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "boolean"
+                    }
+                },
+                {
+                    "name": "scalePortraitBase",
+                    "label": "Portrait Scale : Custom Lower Bound",
+                    "tooltip": "Alternate for above boolean scene scale.  The base scale for landscape scaling. When the screen is shrunk in with the height being 640 this will be the scale. The scale will proportionally increase based on this value. ",
+                    "defValue": 0,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "number"
+                    }
+                },
+                {
+                    "name": "scalePortraitUseMax",
+                    "label": "Portrait Scale : Use Max Scale",
+                    "tooltip": "Whether or not to use the max scale value",
+                    "defValue": false,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "boolean"
+                    }
+                },
+                {
+                    "name": "scalePortraitMax",
+                    "label": "Portrait Scale : Max Scale Value",
+                    "tooltip": "Cutoff for how big the scale can get. Currently increases at the same rate and will stop scaling early once it reaches the max scale instead of stretching the whole range over the whole screen ratio",
+                    "defValue": 0,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "number"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "OrientationHelper",
+            "baseClass": "UserComponent",
+            "gameObjectType": "Phaser.GameObjects.Image",
+            "properties": [
+                {
+                    "name": "lx",
+                    "label": "Landscape X",
+                    "tooltip": "X position for Landscape",
+                    "defValue": 0,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "number"
+                    }
+                },
+                {
+                    "name": "ly",
+                    "label": "Landscape Y",
+                    "tooltip": "Y position for Landscape",
+                    "defValue": 0,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "number"
+                    }
+                },
+                {
+                    "name": "lxScale",
+                    "label": "Landscape Scale X",
+                    "tooltip": "X scale for Landscape",
+                    "defValue": 0,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "number"
+                    }
+                },
+                {
+                    "name": "lyScale",
+                    "label": "Landscape Scale Y",
+                    "tooltip": "Y scale for Landscape",
+                    "defValue": 0,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "number"
+                    }
+                },
+                {
+                    "name": "lAngle",
+                    "label": "Landscape Angle",
+                    "tooltip": "Angle for Landscape",
+                    "defValue": 0,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "number"
+                    }
+                },
+                {
+                    "name": "px",
+                    "label": "Portrait X",
+                    "tooltip": "X position for Portrait",
+                    "defValue": 0,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "number"
+                    }
+                },
+                {
+                    "name": "py",
+                    "label": "Portrait Y",
+                    "tooltip": "Y position for Portrait",
+                    "defValue": 0,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "number"
+                    }
+                },
+                {
+                    "name": "pxScale",
+                    "label": "Portrait Scale X",
+                    "tooltip": "X scale for Portrait",
+                    "defValue": 0,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "number"
+                    }
+                },
+                {
+                    "name": "pyScale",
+                    "label": "Portrait Scale Y",
+                    "tooltip": "Y scale for Portrait",
+                    "defValue": 0,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "number"
+                    }
+                },
+                {
+                    "name": "pAngle",
+                    "label": "Portrait Angle",
+                    "tooltip": "Angle for Portrait ",
+                    "defValue": 0,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "number"
+                    }
+                }
+            ]
+        }
+    ],
+    "meta": {
+        "app": "Phaser Editor 2D - User Components Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.UserComponents"
+    }
+}
