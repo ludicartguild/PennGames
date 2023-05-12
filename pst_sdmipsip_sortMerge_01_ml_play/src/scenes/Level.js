@@ -748,7 +748,7 @@ class Level extends Phaser.Scene {
 	// Write more your code here
 
 	create() {
-		game = this  // Makes the game variable (this) public so it can be accessed anywhere
+		// game = this  // Makes the game variable (this) public so it can be accessed anywhere
 
 		this.prevWidth = 0
 		this.prevHeight = 0
@@ -766,7 +766,7 @@ class Level extends Phaser.Scene {
 		// Audio Start and Stop events added for DAPI compliance
 		sdEvents.on('startMusic',() => { this.sound.add("backgroundMusic").play({ volume: 0.5,  loop : true, delay : 0 }) })
 		sdEvents.on('stopMusic',()  =>   this.sound.stopAll() )
-		sdEvents.emit('startMusic')
+		sdEvents.emit('startMusic');
 
 		// == Start Code Here == 
 		this.dropPencils = [];
@@ -775,12 +775,12 @@ class Level extends Phaser.Scene {
 			this.dropPencils[i].currentPencil = null;
 		}
 		this.spawnableKeys = ["1_pencil"
-							, "2_pencil"
-							, "3_pencil"];
+												, "2_pencil"
+												, "3_pencil"];
 		this.board = new Array(17);
 		this.boardInit = ["5_pencil"
-						, "5_pencil"
-						, ""];
+										, "5_pencil"
+										, ""];
 		this.pencilPadding = 42;
 
 		this.spawnNodes = [];
@@ -802,7 +802,6 @@ class Level extends Phaser.Scene {
 
 		this.isEnding = false;
 		this.isMatching = false;
-
 
 		this.activeClusters = [];
 		this.spawnPencils();
@@ -827,48 +826,48 @@ class Level extends Phaser.Scene {
 			yoyo: true,
 			repeat: -1,
 		});
-
-		this.input.on('dragstart', function(pointer, gameObject){
-			for(var i=0;i<gameObject.cluster.length;i++){
-				if(gameObject.cluster[i] != null){
-					// console.log(gameObject.cluster[i].parentContainer);
-					gameObject.cluster[i].parentContainer.bringToTop(gameObject.cluster[i]);
-				}
-			}
-			this.sound.add("plop").play({ volume: 1,  loop : false, delay : 0 });
-		}, this);
-		this.input.on('drag', function (pointer, gameObject, dragX, dragY) {
-			// console.log(this.isMatching);
-			if(this.isMatching) return;
-			if(this.isEnding) return;
-			gameObject.x = dragX;
-			gameObject.y = dragY;
-		}, this);
+		this.input.on('dragstart', this.onDragStart, this);
+		this.input.on('drag', this.onDrag, this);
 		this.handsUsedCount = 0;
-		this.input.on('dragend', function (pointer, gameObject) {
-			if(this.checkOverlap(gameObject, this.dropArea)){
-				// console.log("Overlapping");
-				// this.activeClusters.splice(gameObject.activeIndex, 1);
-				this.isMatching = true;
-				this.handsUsedCount++;
-				gameObject.destroy();
-				//Place & Match Pencils
-				this.sortPencils(gameObject.cluster);
-				this.movePencils();
-			}else{
-				// console.log("NOT Overlapping");
-				// Return to Hand Placement
-			}
-		}, this);
+		this.input.on('dragend', this.onDragEnd, this);
 	}
-	spawnInitBoard(amount){
+	onDragStart( pointer, gameObject ){
+		for(var i=0;i<gameObject.cluster.length;i++){
+			if(gameObject.cluster[i] != null){
+				gameObject.cluster[i].parentContainer.bringToTop(gameObject.cluster[i]);
+			}
+		}
+		this.sound.add("plop").play({ volume: 1,  loop : false, delay : 0 });
+	}
+	onDrag( pointer, gameObject, dragX, dragY ) {
+		if(this.isMatching) return;
+		if(this.isEnding) return;
+		gameObject.x = dragX;
+		gameObject.y = dragY;
+	}
+	onDragEnd( pointer, gameObject ) {
+		if(this.checkOverlap(gameObject, this.dropArea)){
+			// console.log("Overlapping");
+			// this.activeClusters.splice(gameObject.activeIndex, 1);
+			this.isMatching = true;
+			this.handsUsedCount++;
+			gameObject.destroy();
+			//Place & Match Pencils
+			this.sortPencils(gameObject.cluster);
+			this.movePencils();
+		}else{
+			// console.log("NOT Overlapping");
+			// Return to Hand Placement
+		}
+	}
+	spawnInitBoard( amount ){
 		for(var i=0; i<amount;i++){
 			const obj = new Pencil(this, this.dropPencils[i].x, this.dropPencils[i].y);
 			this.gameplayGroup.add(obj);
 			this.dropPencils[i].currentPencil = obj;
 		}
 	}
-	putOnBoardVFX(pencil, duration){
+	putOnBoardVFX( pencil, duration ){
 		if(this.isEnding) return;
 		if(!Global.gameActive) return;
 		this.tweens.add({
@@ -885,7 +884,7 @@ class Level extends Phaser.Scene {
 			}.bind(this)
 		});
 	}
-	slideOnBoardVFX(pencil, duration){
+	slideOnBoardVFX( pencil, duration ){
 		if(this.isEnding) return;
 		if(!Global.gameActive) return;
 		this.cameras.main.shake(100, 0.00125);
@@ -991,7 +990,7 @@ class Level extends Phaser.Scene {
 			// console.log("movement done");
 		}
 	}
-	movePencils(recursive){
+	movePencils( recursive ){
 		if(this.isEnding) return;
 		if(!Global.gameActive) return;
 		var moveTimeline = this.tweens.createTimeline();
@@ -1046,13 +1045,13 @@ class Level extends Phaser.Scene {
 		moveTimeline.play();
 
 	}
-	onStartHandler(tween, targets,gameObject){
+	onStartHandler( tween, targets,gameObject ){
 		targets[0].parentContainer.bringToTop(targets[0]);
 		if(!targets[0].atBoardY){
 			targets[0].scene.putOnBoardVFX(targets[0], 100);
 		}
 	}
-	sortPencils(pencils){
+	sortPencils( pencils ){
 		if(this.isEnding) return;
 		if(!Global.gameActive) return;
 		var onlyPencils = pencils.filter(n => n);
@@ -1104,10 +1103,10 @@ class Level extends Phaser.Scene {
 		var array = [];
 		array.sort(function(a, b){return a-b});
 	}
-	getRandomInt(max) {
+	getRandomInt( max ) {
 		return Math.floor(Math.random() * max);
 	}
-	checkHandEmpty(hand){
+	checkHandEmpty( hand ){
 		var pos;
 		var isEmpty = true;
 		for(var i=0;i<hand.length; i++){
@@ -1119,7 +1118,7 @@ class Level extends Phaser.Scene {
 		}
 		return isEmpty;
 	}
-	bindCluster(cluster){
+	bindCluster( cluster ){
 		var pencil;
 		var clusterSprite = cluster.clusterSprite;
 		for(var i=0;i<cluster.length;i++){
@@ -1242,11 +1241,8 @@ class Level extends Phaser.Scene {
 			});
 		}
 	}
-	checkOverlap(source, target){
+	checkOverlap( source, target ){
 		return Phaser.Geom.Intersects.RectangleToRectangle(source.getBounds(), target.getBounds());
-	}
-	checkForComplete(){
-
 	}
 	update(){
 		if(!Global.gameActive) return;
