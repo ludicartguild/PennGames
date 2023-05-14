@@ -1,6 +1,5 @@
 window.addEventListener('load', function () {
 	var game = new Phaser.Game(Global.game);
-	
 	game.scene.add("Level", Level);
 	game.scene.add("Boot", Boot, true);
 });
