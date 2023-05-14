@@ -791,7 +791,6 @@ class Level extends Phaser.Scene {
 	movePencils( recursive ){
 		if(this.isEnding) return;
 		if(!Global.gameActive) return;
-		console.log(this.tweens);
 		var moveTimeline = this.tweens.createTimeline();
 		var duration = 75;
 		for(var i=this.dropPencils.length-1;i>=0;i--){

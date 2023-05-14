@@ -2,8 +2,7 @@
 // @font-faces with base64 must be added to fonts.css
 function fontsLoader(){}
 fontsLoader.init = function(){
-    this.debugFonts = false; // If true, console.logs font family names when loaded
-
+    this.debugFonts = false;
     
     // Get all fonts from the styleSheet css rules
     let fontFaces = Object.entries(document.styleSheets[0].cssRules);
