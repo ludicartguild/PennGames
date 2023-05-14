@@ -4,6 +4,10 @@
 
 This is a Phaser Editor 2D v3 project template.
 
+## Style Guide
+
+This project uses a style guide known as [Idiomatic Javascript](https://github.com/rwaldron/idiomatic.js)
+
 ## Configuration
 
 * It includes the latest Phaser v3 runtime (in the `lib/` folder).
