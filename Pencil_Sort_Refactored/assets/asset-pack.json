@@ -1,6 +1,118 @@
 {
     "section1": {
-        "files": []
+        "files": [
+            {
+                "url": "assets/images/background.jpg",
+                "type": "image",
+                "key": "background"
+            },
+            {
+                "url": [
+                    "assets/audio/backgroundMusic.mp3"
+                ],
+                "type": "audio",
+                "key": "backgroundMusic"
+            },
+            {
+                "url": "assets/images/basePencil.png",
+                "type": "image",
+                "key": "basePencil"
+            },
+            {
+                "url": "assets/images/board.png",
+                "type": "image",
+                "key": "board"
+            },
+            {
+                "url": [
+                    "assets/audio/bob.mp3"
+                ],
+                "type": "audio",
+                "key": "bob"
+            },
+            {
+                "url": "assets/images/button.png",
+                "type": "image",
+                "key": "button"
+            },
+            {
+                "url": [
+                    "assets/audio/button.mp3"
+                ],
+                "type": "audio",
+                "key": "plop"
+            },
+            {
+                "url": [
+                    "assets/audio/clang.mp3"
+                ],
+                "type": "audio",
+                "key": "clang"
+            },
+            {
+                "url": "assets/images/color.png",
+                "type": "image",
+                "key": "color"
+            },
+            {
+                "url": [
+                    "assets/audio/falling_pieces.mp3"
+                ],
+                "type": "audio",
+                "key": "falling_pieces"
+            },
+            {
+                "url": "assets/images/guides.png",
+                "type": "image",
+                "key": "guides"
+            },
+            {
+                "url": "assets/images/hand.png",
+                "type": "image",
+                "key": "hand"
+            },
+            {
+                "url": "assets/images/handMat.png",
+                "type": "image",
+                "key": "handMat"
+            },
+            {
+                "url": "assets/images/icon.png",
+                "type": "image",
+                "key": "icon"
+            },
+            {
+                "url": [
+                    "assets/audio/match.mp3"
+                ],
+                "type": "audio",
+                "key": "match"
+            },
+            {
+                "url": "assets/images/pencilColor.png",
+                "type": "image",
+                "key": "pencilColor"
+            },
+            {
+                "url": [
+                    "assets/audio/ruffle.mp3"
+                ],
+                "type": "audio",
+                "key": "ruffle"
+            },
+            {
+                "url": "assets/images/table.png",
+                "type": "image",
+                "key": "table"
+            },
+            {
+                "url": [
+                    "assets/audio/win.mp3"
+                ],
+                "type": "audio",
+                "key": "win"
+            }
+        ]
     },
     "meta": {
         "app": "Phaser Editor 2D - Asset Pack Editor",

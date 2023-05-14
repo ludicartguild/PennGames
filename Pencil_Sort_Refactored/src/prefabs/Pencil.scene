@@ -1,0 +1,72 @@
+{
+    "id": "bb2856c9-cfba-4c76-a4e8-edf221340a30",
+    "sceneType": "PREFAB",
+    "settings": {
+        "generateAwakeHandler": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 0,
+        "borderHeight": 0
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "eec09a4d-de22-4adc-adda-37f4291ddc44",
+            "label": "container_1",
+            "components": [],
+            "scaleX": 0.7,
+            "scaleY": 0.7,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "4f2aad6b-aebd-4de2-bfaa-2e98e01a39d7",
+                    "label": "basePencil",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "basePencil"
+                    },
+                    "list": []
+                },
+                {
+                    "type": "Image",
+                    "id": "6bc74db6-f576-4140-b4e6-3ff599f416ce",
+                    "label": "pencilColor",
+                    "scope": "CLASS",
+                    "components": [],
+                    "texture": {
+                        "key": "pencilColor"
+                    },
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "a749b8a0-1c94-4b2b-a314-7aa9bec35b40",
+                    "label": "numberText",
+                    "scope": "CLASS",
+                    "components": [],
+                    "y": 90,
+                    "scaleX": 0.5,
+                    "scaleY": 0.5,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "1",
+                    "paddingTop": 5,
+                    "align": "center",
+                    "fontFamily": "Baloo Bhaijaan, \"Comic Sans MS\", \"Chalkboard SE\", Sans-serif",
+                    "fontSize": "64px",
+                    "fontStyle": "bold",
+                    "list": []
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

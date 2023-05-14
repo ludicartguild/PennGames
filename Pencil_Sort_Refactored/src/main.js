@@ -1,31 +1,35 @@
-
 window.addEventListener('load', function () {
-
 	var game = new Phaser.Game({
-		width: 1280,
-		height: 720,
+		width: 1138,
+		height: 1138,
 		type: Phaser.AUTO,
         backgroundColor: "#242424",
 		scale: {
-			mode: Phaser.Scale.FIT,
-			autoCenter: Phaser.Scale.CENTER_BOTH
+			mode: Phaser.Scale.FIT, // default NONE
+			autoCenter: Phaser.Scale.CENTER_BOTH // default NO_CENTER
 		}
 	});
-
-	game.scene.add("Preload", Preload);
+	
 	game.scene.add("Level", Level);
 	game.scene.add("Boot", Boot, true);
 });
 
-class Boot extends Phaser.Scene {
+/** @type {Phaser.Events.EventEmitter} */
+var lagEvents
 
+class Boot extends Phaser.Scene {
+	init(){
+		fontsLoader.init();
+	}
 	preload() {
-		
-		this.load.pack("pack", "assets/preload-asset-pack.json");
+		lagEvents = new Phaser.Events.EventEmitter();
+		this.load.pack("pack", "assets/asset-pack.json");
+		this.load.on(Phaser.Loader.Events.COMPLETE, () => this.create());
+		fontsLoader.create();
 	}
 
 	create() {
 
-		this.scene.start("Preload");
+		this.scene.start("Level");
 	}
 }
