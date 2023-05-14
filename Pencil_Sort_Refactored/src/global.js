@@ -1,9 +1,16 @@
 function Global(){}
-
+Global.game = {
+    width: 1138,
+    height: 1138,
+    type: Phaser.AUTO,
+    backgroundColor: "#242424",
+    scale: {
+        mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_BOTH
+    }
+}
 Global.gameActive = true;
 Global.orientation = "l"
-// Global.isMuted = false
-
 Global.matchWinCondition = 6;
 Global.spawnPencilIntMax = 3;
 Global.pencilColors = {
