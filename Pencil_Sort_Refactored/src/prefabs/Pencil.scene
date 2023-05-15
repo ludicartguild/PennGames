@@ -2,7 +2,6 @@
     "id": "bb2856c9-cfba-4c76-a4e8-edf221340a30",
     "sceneType": "PREFAB",
     "settings": {
-        "generateAwakeHandler": true,
         "preloadMethodName": "",
         "preloadPackFiles": [],
         "createMethodName": "",

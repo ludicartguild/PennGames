@@ -32,12 +32,11 @@ class Pencil extends Phaser.GameObjects.Container {
 		this.basePencil = basePencil;
 		this.pencilColor = pencilColor;
 		this.numberText = numberText;
-		// awake handler
-		// this.scene.events.once("scene-awake", () => this.awake());
 
 		/* START-USER-CTR-CODE */
+
 		this.awake();
-		// Write your code here.
+
 		/* END-USER-CTR-CODE */
 	}
 
@@ -49,29 +48,42 @@ class Pencil extends Phaser.GameObjects.Container {
 	numberText;
 
 	/* START-USER-CODE */
+
 	awake(){
+
 		this.setNumber();
 		this.setColor();
 	}
+
 	setNumber(){
-		const number = this.getRandomInt(Global.spawnPencilIntMax);
+
+		const number = this.getRandomInt(global.spawnPencilIntMax);
+
 		this.numberText.text = number;
+
 		this.currentNumber = number;
 	}
+
 	setColor(){
-		var color = 0xffffff;
-		color = Global.pencilColors[parseInt(this.numberText.text)];
+
+		var color = global.pencilColors[parseInt(this.numberText.text)];
+
 		this.pencilColor.setTint(color);
 	}
+
 	getRandomInt(max) {
+
 		return Math.floor(Math.random() * max) + 1;
 	}
+
 	incrementNumber(){
+
 		this.currentNumber += 1;
+
 		this.numberText.text = this.currentNumber + '';
-		this.pencilColor.setTint(Global.pencilColors[this.currentNumber]);
+
+		this.pencilColor.setTint(global.pencilColors[this.currentNumber]);
 	}
-	// Write your code here.
 
 	/* END-USER-CODE */
 }

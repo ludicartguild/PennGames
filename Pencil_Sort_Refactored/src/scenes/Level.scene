@@ -75,29 +75,88 @@
                     "list": []
                 },
                 {
-                    "type": "Image",
-                    "id": "ebcd4e2e-a5f3-4b81-a12e-7911b524e05a",
-                    "label": "handMat_0",
+                    "type": "Container",
+                    "id": "80dbdd77-9250-4808-a853-a562981011b0",
+                    "label": "allHandMats",
                     "scope": "CLASS",
                     "components": [],
-                    "texture": {
-                        "key": "handMat"
-                    },
-                    "x": 369,
-                    "y": 719,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "visible": false,
-                    "alpha": 0.2,
-                    "alphaTopLeft": 0.2,
-                    "alphaTopRight": 0.2,
-                    "alphaBottomLeft": 0.2,
-                    "alphaBottomRight": 0.2,
-                    "tintTopLeft": "#000000",
-                    "tintTopRight": "#000000",
-                    "tintBottomLeft": "#000000",
-                    "tintBottomRight": "#000000",
-                    "list": []
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "ebcd4e2e-a5f3-4b81-a12e-7911b524e05a",
+                            "label": "handMat_0",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "handMat"
+                            },
+                            "x": 369,
+                            "y": 719,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7,
+                            "visible": false,
+                            "alpha": 0.2,
+                            "alphaTopLeft": 0.2,
+                            "alphaTopRight": 0.2,
+                            "alphaBottomLeft": 0.2,
+                            "alphaBottomRight": 0.2,
+                            "tintTopLeft": "#000000",
+                            "tintTopRight": "#000000",
+                            "tintBottomLeft": "#000000",
+                            "tintBottomRight": "#000000",
+                            "list": []
+                        },
+                        {
+                            "type": "Image",
+                            "id": "b08e6899-b342-409e-a06b-032d3e73a923",
+                            "label": "handMat_1",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "handMat"
+                            },
+                            "x": 569,
+                            "y": 719,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7,
+                            "visible": false,
+                            "alpha": 0.2,
+                            "alphaTopLeft": 0.2,
+                            "alphaTopRight": 0.2,
+                            "alphaBottomLeft": 0.2,
+                            "alphaBottomRight": 0.2,
+                            "tintTopLeft": "#000000",
+                            "tintTopRight": "#000000",
+                            "tintBottomLeft": "#000000",
+                            "tintBottomRight": "#000000",
+                            "list": []
+                        },
+                        {
+                            "type": "Image",
+                            "id": "e811ded4-16b6-4797-9081-59840cca7dfa",
+                            "label": "handMat_2",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "handMat"
+                            },
+                            "x": 769,
+                            "y": 719,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7,
+                            "visible": false,
+                            "alpha": 0.2,
+                            "alphaTopLeft": 0.2,
+                            "alphaTopRight": 0.2,
+                            "alphaBottomLeft": 0.2,
+                            "alphaBottomRight": 0.2,
+                            "tintTopLeft": "#000000",
+                            "tintTopRight": "#000000",
+                            "tintBottomLeft": "#000000",
+                            "tintBottomRight": "#000000",
+                            "list": []
+                        }
+                    ]
                 },
                 {
                     "type": "Image",
@@ -125,7 +184,7 @@
                         "key": "basePencil"
                     },
                     "x": 369,
-                    "y": 719,
+                    "y": 718,
                     "scaleX": 0.7,
                     "scaleY": 0.7,
                     "visible": false,
@@ -141,7 +200,7 @@
                         "key": "basePencil"
                     },
                     "x": 325.6000061035156,
-                    "y": 719,
+                    "y": 718,
                     "scaleX": 0.7,
                     "scaleY": 0.7,
                     "visible": false,
@@ -205,31 +264,6 @@
                     "tintTopRight": "#ff0202",
                     "tintBottomLeft": "#ff0202",
                     "tintBottomRight": "#ff0202",
-                    "list": []
-                },
-                {
-                    "type": "Image",
-                    "id": "b08e6899-b342-409e-a06b-032d3e73a923",
-                    "label": "handMat_1",
-                    "scope": "CLASS",
-                    "components": [],
-                    "texture": {
-                        "key": "handMat"
-                    },
-                    "x": 569,
-                    "y": 719,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "visible": false,
-                    "alpha": 0.2,
-                    "alphaTopLeft": 0.2,
-                    "alphaTopRight": 0.2,
-                    "alphaBottomLeft": 0.2,
-                    "alphaBottomRight": 0.2,
-                    "tintTopLeft": "#000000",
-                    "tintTopRight": "#000000",
-                    "tintBottomLeft": "#000000",
-                    "tintBottomRight": "#000000",
                     "list": []
                 },
                 {
@@ -342,31 +376,6 @@
                 },
                 {
                     "type": "Image",
-                    "id": "e811ded4-16b6-4797-9081-59840cca7dfa",
-                    "label": "handMat_2",
-                    "scope": "CLASS",
-                    "components": [],
-                    "texture": {
-                        "key": "handMat"
-                    },
-                    "x": 769,
-                    "y": 719,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "visible": false,
-                    "alpha": 0.2,
-                    "alphaTopLeft": 0.2,
-                    "alphaTopRight": 0.2,
-                    "alphaBottomLeft": 0.2,
-                    "alphaBottomRight": 0.2,
-                    "tintTopLeft": "#000000",
-                    "tintTopRight": "#000000",
-                    "tintBottomLeft": "#000000",
-                    "tintBottomRight": "#000000",
-                    "list": []
-                },
-                {
-                    "type": "Image",
                     "id": "a650a40b-d59f-4119-ae26-cc1da52ba1bb",
                     "label": "spawnPencil_2_2",
                     "scope": "CLASS",
@@ -474,344 +483,353 @@
                     "list": []
                 },
                 {
-                    "type": "Image",
-                    "id": "57dccd19-04ab-4795-ae74-aaa3745bd5d5",
-                    "label": "dropPencil_0",
+                    "type": "Container",
+                    "id": "61f8f29a-e246-4f3b-a69a-4e14bf532147",
+                    "label": "allDropPencils",
                     "scope": "CLASS",
                     "components": [],
-                    "texture": {
-                        "key": "basePencil"
-                    },
-                    "x": 275,
-                    "y": 476,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "visible": false,
-                    "tintTopLeft": "#f20000",
-                    "tintTopRight": "#f20000",
-                    "tintBottomLeft": "#f20000",
-                    "tintBottomRight": "#f20000",
-                    "list": []
-                },
-                {
-                    "type": "Image",
-                    "id": "3318f73c-577b-4cab-a5c5-a9482a022379",
-                    "label": "dropPencil_1",
-                    "scope": "CLASS",
-                    "components": [],
-                    "texture": {
-                        "key": "basePencil"
-                    },
-                    "x": 311,
-                    "y": 476,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "visible": false,
-                    "tintTopLeft": "#f20000",
-                    "tintTopRight": "#f20000",
-                    "tintBottomLeft": "#f20000",
-                    "tintBottomRight": "#f20000",
-                    "list": []
-                },
-                {
-                    "type": "Image",
-                    "id": "092b2f3b-1f3f-4c4b-9fb9-6598683cbfee",
-                    "label": "dropPencil_2",
-                    "scope": "CLASS",
-                    "components": [],
-                    "texture": {
-                        "key": "basePencil"
-                    },
-                    "x": 347,
-                    "y": 476,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "visible": false,
-                    "tintTopLeft": "#f20000",
-                    "tintTopRight": "#f20000",
-                    "tintBottomLeft": "#f20000",
-                    "tintBottomRight": "#f20000",
-                    "list": []
-                },
-                {
-                    "type": "Image",
-                    "id": "48ebf5c7-ae77-4b23-9f0c-5c45f7de7afd",
-                    "label": "dropPencil_3",
-                    "scope": "CLASS",
-                    "components": [],
-                    "texture": {
-                        "key": "basePencil"
-                    },
-                    "x": 383,
-                    "y": 476,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "visible": false,
-                    "tintTopLeft": "#f20000",
-                    "tintTopRight": "#f20000",
-                    "tintBottomLeft": "#f20000",
-                    "tintBottomRight": "#f20000",
-                    "list": []
-                },
-                {
-                    "type": "Image",
-                    "id": "83cde98e-0ea2-4627-95ab-68b6f29619d1",
-                    "label": "dropPencil_4",
-                    "scope": "CLASS",
-                    "components": [],
-                    "texture": {
-                        "key": "basePencil"
-                    },
-                    "x": 419,
-                    "y": 476,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "visible": false,
-                    "tintTopLeft": "#f20000",
-                    "tintTopRight": "#f20000",
-                    "tintBottomLeft": "#f20000",
-                    "tintBottomRight": "#f20000",
-                    "list": []
-                },
-                {
-                    "type": "Image",
-                    "id": "f45e2f26-6de9-435b-bdce-d02cd0b06182",
-                    "label": "dropPencil_5",
-                    "scope": "CLASS",
-                    "components": [],
-                    "texture": {
-                        "key": "basePencil"
-                    },
-                    "x": 457,
-                    "y": 476,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "visible": false,
-                    "tintTopLeft": "#f20000",
-                    "tintTopRight": "#f20000",
-                    "tintBottomLeft": "#f20000",
-                    "tintBottomRight": "#f20000",
-                    "list": []
-                },
-                {
-                    "type": "Image",
-                    "id": "504ef946-fe28-4f27-966a-01a8d630f4dc",
-                    "label": "dropPencil_6",
-                    "scope": "CLASS",
-                    "components": [],
-                    "texture": {
-                        "key": "basePencil"
-                    },
-                    "x": 494,
-                    "y": 476,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "visible": false,
-                    "tintTopLeft": "#f20000",
-                    "tintTopRight": "#f20000",
-                    "tintBottomLeft": "#f20000",
-                    "tintBottomRight": "#f20000",
-                    "list": []
-                },
-                {
-                    "type": "Image",
-                    "id": "27c01552-b768-4fad-bf2a-ca00a28f8759",
-                    "label": "dropPencil_7",
-                    "scope": "CLASS",
-                    "components": [],
-                    "texture": {
-                        "key": "basePencil"
-                    },
-                    "x": 531,
-                    "y": 476,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "visible": false,
-                    "tintTopLeft": "#f20000",
-                    "tintTopRight": "#f20000",
-                    "tintBottomLeft": "#f20000",
-                    "tintBottomRight": "#f20000",
-                    "list": []
-                },
-                {
-                    "type": "Image",
-                    "id": "e43840cc-c33b-49a9-8930-84d4b7aebe9a",
-                    "label": "dropPencil_8",
-                    "scope": "CLASS",
-                    "components": [],
-                    "texture": {
-                        "key": "basePencil"
-                    },
-                    "x": 567,
-                    "y": 476,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "visible": false,
-                    "tintTopLeft": "#f20000",
-                    "tintTopRight": "#f20000",
-                    "tintBottomLeft": "#f20000",
-                    "tintBottomRight": "#f20000",
-                    "list": []
-                },
-                {
-                    "type": "Image",
-                    "id": "626e2443-57ae-4715-a98b-6dcb6c70b8e3",
-                    "label": "dropPencil_9",
-                    "scope": "CLASS",
-                    "components": [],
-                    "texture": {
-                        "key": "basePencil"
-                    },
-                    "x": 609,
-                    "y": 476,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "visible": false,
-                    "tintTopLeft": "#f20000",
-                    "tintTopRight": "#f20000",
-                    "tintBottomLeft": "#f20000",
-                    "tintBottomRight": "#f20000",
-                    "list": []
-                },
-                {
-                    "type": "Image",
-                    "id": "a6e42610-a1cf-4fc1-860b-a849032ef4b4",
-                    "label": "dropPencil_10",
-                    "scope": "CLASS",
-                    "components": [],
-                    "texture": {
-                        "key": "basePencil"
-                    },
-                    "x": 645,
-                    "y": 476,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "visible": false,
-                    "tintTopLeft": "#f20000",
-                    "tintTopRight": "#f20000",
-                    "tintBottomLeft": "#f20000",
-                    "tintBottomRight": "#f20000",
-                    "list": []
-                },
-                {
-                    "type": "Image",
-                    "id": "b6799171-b0ac-42a3-8164-fbff901c4254",
-                    "label": "dropPencil_11",
-                    "scope": "CLASS",
-                    "components": [],
-                    "texture": {
-                        "key": "basePencil"
-                    },
-                    "x": 683,
-                    "y": 476,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "visible": false,
-                    "tintTopLeft": "#f20000",
-                    "tintTopRight": "#f20000",
-                    "tintBottomLeft": "#f20000",
-                    "tintBottomRight": "#f20000",
-                    "list": []
-                },
-                {
-                    "type": "Image",
-                    "id": "4eac833f-9aff-45b4-8ff5-a1daded1fa0a",
-                    "label": "dropPencil_12",
-                    "scope": "CLASS",
-                    "components": [],
-                    "texture": {
-                        "key": "basePencil"
-                    },
-                    "x": 720,
-                    "y": 476,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "visible": false,
-                    "tintTopLeft": "#f20000",
-                    "tintTopRight": "#f20000",
-                    "tintBottomLeft": "#f20000",
-                    "tintBottomRight": "#f20000",
-                    "list": []
-                },
-                {
-                    "type": "Image",
-                    "id": "06f05f86-9414-4258-bed3-5f8900eda0db",
-                    "label": "dropPencil_13",
-                    "scope": "CLASS",
-                    "components": [],
-                    "texture": {
-                        "key": "basePencil"
-                    },
-                    "x": 757,
-                    "y": 476,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "visible": false,
-                    "tintTopLeft": "#f20000",
-                    "tintTopRight": "#f20000",
-                    "tintBottomLeft": "#f20000",
-                    "tintBottomRight": "#f20000",
-                    "list": []
-                },
-                {
-                    "type": "Image",
-                    "id": "7f07bded-9262-48f4-a60f-9da04f8a0f45",
-                    "label": "dropPencil_14",
-                    "scope": "CLASS",
-                    "components": [],
-                    "texture": {
-                        "key": "basePencil"
-                    },
-                    "x": 793,
-                    "y": 476,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "visible": false,
-                    "tintTopLeft": "#f20000",
-                    "tintTopRight": "#f20000",
-                    "tintBottomLeft": "#f20000",
-                    "tintBottomRight": "#f20000",
-                    "list": []
-                },
-                {
-                    "type": "Image",
-                    "id": "acb9c8ef-9cf0-4135-9091-3bc104c231ff",
-                    "label": "dropPencil_15",
-                    "scope": "CLASS",
-                    "components": [],
-                    "texture": {
-                        "key": "basePencil"
-                    },
-                    "x": 831,
-                    "y": 476,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "visible": false,
-                    "tintTopLeft": "#f20000",
-                    "tintTopRight": "#f20000",
-                    "tintBottomLeft": "#f20000",
-                    "tintBottomRight": "#f20000",
-                    "list": []
-                },
-                {
-                    "type": "Image",
-                    "id": "7b6b4b5d-414c-4080-a583-f62fdcf685cb",
-                    "label": "dropPencil_16",
-                    "scope": "CLASS",
-                    "components": [],
-                    "texture": {
-                        "key": "basePencil"
-                    },
-                    "x": 868,
-                    "y": 476,
-                    "scaleX": 0.7,
-                    "scaleY": 0.7,
-                    "visible": false,
-                    "tintTopLeft": "#f20000",
-                    "tintTopRight": "#f20000",
-                    "tintBottomLeft": "#f20000",
-                    "tintBottomRight": "#f20000",
-                    "list": []
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "57dccd19-04ab-4795-ae74-aaa3745bd5d5",
+                            "label": "dropPencil_0",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "basePencil"
+                            },
+                            "x": 275,
+                            "y": 476,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7,
+                            "visible": false,
+                            "tintTopLeft": "#f20000",
+                            "tintTopRight": "#f20000",
+                            "tintBottomLeft": "#f20000",
+                            "tintBottomRight": "#f20000",
+                            "list": []
+                        },
+                        {
+                            "type": "Image",
+                            "id": "3318f73c-577b-4cab-a5c5-a9482a022379",
+                            "label": "dropPencil_1",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "basePencil"
+                            },
+                            "x": 311,
+                            "y": 476,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7,
+                            "visible": false,
+                            "tintTopLeft": "#f20000",
+                            "tintTopRight": "#f20000",
+                            "tintBottomLeft": "#f20000",
+                            "tintBottomRight": "#f20000",
+                            "list": []
+                        },
+                        {
+                            "type": "Image",
+                            "id": "092b2f3b-1f3f-4c4b-9fb9-6598683cbfee",
+                            "label": "dropPencil_2",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "basePencil"
+                            },
+                            "x": 347,
+                            "y": 476,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7,
+                            "visible": false,
+                            "tintTopLeft": "#f20000",
+                            "tintTopRight": "#f20000",
+                            "tintBottomLeft": "#f20000",
+                            "tintBottomRight": "#f20000",
+                            "list": []
+                        },
+                        {
+                            "type": "Image",
+                            "id": "48ebf5c7-ae77-4b23-9f0c-5c45f7de7afd",
+                            "label": "dropPencil_3",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "basePencil"
+                            },
+                            "x": 383,
+                            "y": 476,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7,
+                            "visible": false,
+                            "tintTopLeft": "#f20000",
+                            "tintTopRight": "#f20000",
+                            "tintBottomLeft": "#f20000",
+                            "tintBottomRight": "#f20000",
+                            "list": []
+                        },
+                        {
+                            "type": "Image",
+                            "id": "83cde98e-0ea2-4627-95ab-68b6f29619d1",
+                            "label": "dropPencil_4",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "basePencil"
+                            },
+                            "x": 419,
+                            "y": 476,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7,
+                            "visible": false,
+                            "tintTopLeft": "#f20000",
+                            "tintTopRight": "#f20000",
+                            "tintBottomLeft": "#f20000",
+                            "tintBottomRight": "#f20000",
+                            "list": []
+                        },
+                        {
+                            "type": "Image",
+                            "id": "f45e2f26-6de9-435b-bdce-d02cd0b06182",
+                            "label": "dropPencil_5",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "basePencil"
+                            },
+                            "x": 457,
+                            "y": 476,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7,
+                            "visible": false,
+                            "tintTopLeft": "#f20000",
+                            "tintTopRight": "#f20000",
+                            "tintBottomLeft": "#f20000",
+                            "tintBottomRight": "#f20000",
+                            "list": []
+                        },
+                        {
+                            "type": "Image",
+                            "id": "504ef946-fe28-4f27-966a-01a8d630f4dc",
+                            "label": "dropPencil_6",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "basePencil"
+                            },
+                            "x": 494,
+                            "y": 476,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7,
+                            "visible": false,
+                            "tintTopLeft": "#f20000",
+                            "tintTopRight": "#f20000",
+                            "tintBottomLeft": "#f20000",
+                            "tintBottomRight": "#f20000",
+                            "list": []
+                        },
+                        {
+                            "type": "Image",
+                            "id": "27c01552-b768-4fad-bf2a-ca00a28f8759",
+                            "label": "dropPencil_7",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "basePencil"
+                            },
+                            "x": 531,
+                            "y": 476,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7,
+                            "visible": false,
+                            "tintTopLeft": "#f20000",
+                            "tintTopRight": "#f20000",
+                            "tintBottomLeft": "#f20000",
+                            "tintBottomRight": "#f20000",
+                            "list": []
+                        },
+                        {
+                            "type": "Image",
+                            "id": "e43840cc-c33b-49a9-8930-84d4b7aebe9a",
+                            "label": "dropPencil_8",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "basePencil"
+                            },
+                            "x": 567,
+                            "y": 476,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7,
+                            "visible": false,
+                            "tintTopLeft": "#f20000",
+                            "tintTopRight": "#f20000",
+                            "tintBottomLeft": "#f20000",
+                            "tintBottomRight": "#f20000",
+                            "list": []
+                        },
+                        {
+                            "type": "Image",
+                            "id": "626e2443-57ae-4715-a98b-6dcb6c70b8e3",
+                            "label": "dropPencil_9",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "basePencil"
+                            },
+                            "x": 609,
+                            "y": 476,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7,
+                            "visible": false,
+                            "tintTopLeft": "#f20000",
+                            "tintTopRight": "#f20000",
+                            "tintBottomLeft": "#f20000",
+                            "tintBottomRight": "#f20000",
+                            "list": []
+                        },
+                        {
+                            "type": "Image",
+                            "id": "a6e42610-a1cf-4fc1-860b-a849032ef4b4",
+                            "label": "dropPencil_10",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "basePencil"
+                            },
+                            "x": 645,
+                            "y": 476,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7,
+                            "visible": false,
+                            "tintTopLeft": "#f20000",
+                            "tintTopRight": "#f20000",
+                            "tintBottomLeft": "#f20000",
+                            "tintBottomRight": "#f20000",
+                            "list": []
+                        },
+                        {
+                            "type": "Image",
+                            "id": "b6799171-b0ac-42a3-8164-fbff901c4254",
+                            "label": "dropPencil_11",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "basePencil"
+                            },
+                            "x": 683,
+                            "y": 476,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7,
+                            "visible": false,
+                            "tintTopLeft": "#f20000",
+                            "tintTopRight": "#f20000",
+                            "tintBottomLeft": "#f20000",
+                            "tintBottomRight": "#f20000",
+                            "list": []
+                        },
+                        {
+                            "type": "Image",
+                            "id": "4eac833f-9aff-45b4-8ff5-a1daded1fa0a",
+                            "label": "dropPencil_12",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "basePencil"
+                            },
+                            "x": 720,
+                            "y": 476,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7,
+                            "visible": false,
+                            "tintTopLeft": "#f20000",
+                            "tintTopRight": "#f20000",
+                            "tintBottomLeft": "#f20000",
+                            "tintBottomRight": "#f20000",
+                            "list": []
+                        },
+                        {
+                            "type": "Image",
+                            "id": "06f05f86-9414-4258-bed3-5f8900eda0db",
+                            "label": "dropPencil_13",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "basePencil"
+                            },
+                            "x": 757,
+                            "y": 476,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7,
+                            "visible": false,
+                            "tintTopLeft": "#f20000",
+                            "tintTopRight": "#f20000",
+                            "tintBottomLeft": "#f20000",
+                            "tintBottomRight": "#f20000",
+                            "list": []
+                        },
+                        {
+                            "type": "Image",
+                            "id": "7f07bded-9262-48f4-a60f-9da04f8a0f45",
+                            "label": "dropPencil_14",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "basePencil"
+                            },
+                            "x": 793,
+                            "y": 476,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7,
+                            "visible": false,
+                            "tintTopLeft": "#f20000",
+                            "tintTopRight": "#f20000",
+                            "tintBottomLeft": "#f20000",
+                            "tintBottomRight": "#f20000",
+                            "list": []
+                        },
+                        {
+                            "type": "Image",
+                            "id": "acb9c8ef-9cf0-4135-9091-3bc104c231ff",
+                            "label": "dropPencil_15",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "basePencil"
+                            },
+                            "x": 831,
+                            "y": 476,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7,
+                            "visible": false,
+                            "tintTopLeft": "#f20000",
+                            "tintTopRight": "#f20000",
+                            "tintBottomLeft": "#f20000",
+                            "tintBottomRight": "#f20000",
+                            "list": []
+                        },
+                        {
+                            "type": "Image",
+                            "id": "7b6b4b5d-414c-4080-a583-f62fdcf685cb",
+                            "label": "dropPencil_16",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "basePencil"
+                            },
+                            "x": 868,
+                            "y": 476,
+                            "scaleX": 0.7,
+                            "scaleY": 0.7,
+                            "visible": false,
+                            "tintTopLeft": "#f20000",
+                            "tintTopRight": "#f20000",
+                            "tintBottomLeft": "#f20000",
+                            "tintBottomRight": "#f20000",
+                            "list": []
+                        }
+                    ]
                 }
             ]
         }
