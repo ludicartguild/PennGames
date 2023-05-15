@@ -609,22 +609,22 @@ class Level extends Phaser.Scene {
 		this.spawnPencils();
 
 		// Input Functions for Dragging
-		this.input.on('dragstart', this.onDragStart, this);
+		this.input.on( 'dragstart', this.onDragStart, this );
 
-		this.input.on('drag', this.onDrag, this);
+		this.input.on( 'drag', this.onDrag, this );
 
-		this.input.on('dragend', this.onDragEnd, this);
+		this.input.on( 'dragend', this.onDragEnd, this );
 	}
 
 	update() {
 
-		if(!global.gameActive) return;
+		if( !global.gameActive ) return;
 
 		this.activeClusters.forEach(( cluster )=>{
 
-			if(cluster == null) return;
+			if( cluster == null ) return;
 
-			this.bindCluster(cluster);
+			this.bindCluster( cluster );
 		});
 		
 		this.handleOrientation();
@@ -632,7 +632,7 @@ class Level extends Phaser.Scene {
 
 	initLevelProps() {
 		// Level.js Scoped Variables
-		this.board = new Array(17);
+		this.board = new Array( 17 );
 
 		this.activeClusters = [];
 
@@ -669,7 +669,7 @@ class Level extends Phaser.Scene {
 			this.handMat = null
 		}
 
-		for( var i=0; i<this.allHandMats.length; i++ ){
+		for( var i=0; i < this.allHandMats.length; i++ ){
 
 			var hand = new Hand();
 
@@ -733,6 +733,7 @@ class Level extends Phaser.Scene {
 		if( this.isEnding || !global.gameActive ) return;
 
 		gameObject.x = dragX;
+
 		gameObject.y = dragY;
 	}
 
@@ -773,7 +774,7 @@ class Level extends Phaser.Scene {
 			yoyo				: true,
 			onComplete	: ()=>{
 
-				utils.sFX("clang", 0.10, false, 0, this);
+				utils.sFX( "clang", 0.10, false, 0, this );
 			}
 		});
 	}
@@ -835,7 +836,7 @@ class Level extends Phaser.Scene {
 
 			numMatched++;
 
-			for( var i=1; i>=0; i-- ){
+			for( var i=1; i >= 0; i-- ){
 
 				const adjacentPencil = adjacentPencils[i];
 
@@ -876,21 +877,21 @@ class Level extends Phaser.Scene {
 						ease        : Phaser.Math.Easing.Sine,
 						duration    : 300,
 						delay				: 0,
-						onStart			: (tween, targets) => {
+						onStart			: ( tween, targets ) => {
 
 							targets[0].parentContainer.bringToTop( targets[0] );
 						},
 						onComplete	: () => {
 
-							window.setTimeout(() => this.scene.start("Level"), 500 );
+							window.setTimeout(() => this.scene.start( "Level" ), 500 );
 						}
 					});
 				}
-			}.bind(this), 200);
+			}.bind( this ), 200 );
 			
 		});
 
-		if(numMatched != 0){
+		if( numMatched != 0 ){
 
 			window.setTimeout(function(){
 
@@ -906,8 +907,8 @@ class Level extends Phaser.Scene {
 					}
 				});
 
-				this.movePencils(true);
-			}.bind(this), 500);
+				this.movePencils( true );
+			}.bind( this ), 500 );
 		}else{
 
 			this.isMatching = false;
@@ -1032,18 +1033,18 @@ class Level extends Phaser.Scene {
 		}
 		prevBoard.sort(( a, b ) => {
 			// nulls sort after anything else
-			if (a === null) {
+			if ( a === null ) {
 				return 1;
 			}
-			if (b === null) {
+			if ( b === null ) {
 				return -1;
 			}
 			// equal items sort equally
-			if (a.currentNumber === b.currentNumber) {
+			if ( a.currentNumber === b.currentNumber ) {
 				return 0;
 			}
 			// otherwise, if we're ascending, lowest sorts first
-			if (global.ascending) {
+			if ( global.ascending ) {
 				return a.currentNumber < b.currentNumber ? -1 : 1;
 			}
 			// if descending, highest sorts first
@@ -1095,7 +1096,11 @@ class Level extends Phaser.Scene {
 
 	createPencilCluster() {
 
-		var cluster = [null, null, null];
+		var cluster = [
+			null, 
+			null, 
+			null
+		];
 
 		var randomInt;
 
@@ -1103,12 +1108,12 @@ class Level extends Phaser.Scene {
 
 		for( var i=0; i < cluster.length; i++ ){
 
-			randomInt = this.getRandomInt(4);
+			randomInt = this.getRandomInt( 4 );
 
 			if(randomInt != 3){
 
 				cluster[i] = this.createPencil();
-			}else if(nullCount >= cluster.length-1){
+			}else if( nullCount >= cluster.length-1 ){
 
 				cluster[i] = this.createPencil();
 				break;
@@ -1220,7 +1225,7 @@ class Level extends Phaser.Scene {
 
 	checkOverlap( source, target ) {
 
-		return Phaser.Geom.Intersects.RectangleToRectangle(source.getBounds(), target.getBounds());
+		return Phaser.Geom.Intersects.RectangleToRectangle( source.getBounds(), target.getBounds() );
 	}
 
 	handleOrientation() {
@@ -1242,32 +1247,32 @@ class Level extends Phaser.Scene {
 		if( global.orientation == "l" ){ 
 
 			// Landscape
-			this.scale.displaySize.resize(1138,Math.max(640, Math.min(1138*aspectRatio, 854)));
+			this.scale.displaySize.resize( 1138, Math.max( 640, Math.min( 1138 * aspectRatio, 854 )));
 
-			this.scale.setGameSize(1138,Math.max(640, Math.min(1138*aspectRatio, 854)));
+			this.scale.setGameSize( 1138, Math.max( 640, Math.min( 1138 * aspectRatio, 854 )));
 		}else if( global.orientation == "p" ){
 
  			// Portrait
-			this.scale.displaySize.resize(Math.max(640, Math.min(1138/aspectRatio, 854)),1138);
+			this.scale.displaySize.resize( Math.max( 640, Math.min( 1138 / aspectRatio, 854 )), 1138 );
 
-			this.scale.setGameSize(Math.max(640, Math.min(1138/aspectRatio, 854)),1138);
+			this.scale.setGameSize( Math.max( 640, Math.min( 1138 / aspectRatio, 854 )),1138 );
 		}
 
 		// Baked in Bandaid solution to worldview variables not being updated the first time the handleOrientation function runs
 		this.time.addEvent({ delay: .01, callback: () =>{
 
-			if(global.orientation == "l"){
+			if( global.orientation == "l" ){
 
 				// Landscape
-				this.scale.setGameSize(1138,Math.max(640, Math.min(1138*aspectRatio, 854)));
-			}else if(global.orientation == "p"){
+				this.scale.setGameSize( 1138, Math.max( 640, Math.min( 1138 * aspectRatio, 854 )));
+			}else if( global.orientation == "p" ){
 
 				// Portrait
-				this.scale.setGameSize(Math.max(640, Math.min(1138/aspectRatio, 854)),1138);
+				this.scale.setGameSize( Math.max( 640, Math.min( 1138 / aspectRatio, 854 )), 1138 );
 			} 
 		}});
 
-		this.cameras.main.centerOn(569,569);
+		this.cameras.main.centerOn( 569,569 );
   } 
 	/* END-USER-CODE */
 }

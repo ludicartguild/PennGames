@@ -1,12 +1,12 @@
 var global = new Global();
 
-window.addEventListener( 'load', function () {
+window.addEventListener( 'load', () => {
 
-	var game = new Phaser.Game(global.game);
+	var game = new Phaser.Game( global.game );
 
-	game.scene.add("Level", Level);
+	game.scene.add( "Level", Level );
 
-	game.scene.add("Boot", Boot, true);
+	game.scene.add( "Boot", Boot, true );
 });
 
 class Boot extends Phaser.Scene {
@@ -18,7 +18,7 @@ class Boot extends Phaser.Scene {
 	
 	preload() {
 
-		this.load.pack("pack", "assets/asset-pack.json");
+		this.load.pack( "pack", "assets/asset-pack.json" );
 
 		this.load.on(Phaser.Loader.Events.COMPLETE, () => this.create());
 
@@ -27,6 +27,6 @@ class Boot extends Phaser.Scene {
 
 	create() {
 
-		this.scene.start("Level");
+		this.scene.start( "Level" );
 	}
 }

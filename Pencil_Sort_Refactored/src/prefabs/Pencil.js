@@ -52,12 +52,13 @@ class Pencil extends Phaser.GameObjects.Container {
 	awake(){
 
 		this.setNumber();
+
 		this.setColor();
 	}
 
 	setNumber(){
 
-		const number = this.getRandomInt(global.spawnPencilIntMax);
+		const number = this.getRandomInt( global.spawnPencilIntMax );
 
 		this.numberText.text = number;
 
@@ -66,14 +67,14 @@ class Pencil extends Phaser.GameObjects.Container {
 
 	setColor(){
 
-		var color = global.pencilColors[parseInt(this.numberText.text)];
+		var color = global.pencilColors[parseInt( this.numberText.text )];
 
-		this.pencilColor.setTint(color);
+		this.pencilColor.setTint( color );
 	}
 
-	getRandomInt(max) {
+	getRandomInt( max ) {
 
-		return Math.floor(Math.random() * max) + 1;
+		return Math.floor( Math.random() * max ) + 1;
 	}
 
 	incrementNumber(){
@@ -82,7 +83,7 @@ class Pencil extends Phaser.GameObjects.Container {
 
 		this.numberText.text = this.currentNumber + '';
 
-		this.pencilColor.setTint(global.pencilColors[this.currentNumber]);
+		this.pencilColor.setTint( global.pencilColors[this.currentNumber] );
 	}
 
 	/* END-USER-CODE */
